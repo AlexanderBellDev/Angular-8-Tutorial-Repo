@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuraldirectivesComponent implements OnInit {
   visible = false;
+  color = 'rrr';
   constructor() { }
 
   ngOnInit() {
