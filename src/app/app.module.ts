@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestcomponentComponent } from './testcomponent/testcomponent.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { TemplatereferenceComponent } from './templatereference/templatereference.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestcomponentComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TemplatereferenceComponent
   ],
   imports: [
     BrowserModule,
