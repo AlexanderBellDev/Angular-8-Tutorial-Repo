@@ -8,3 +8,11 @@
 <h2 [class.text-danger]="hasError">Code dell</h2>
 
 <h2 [ngClass]="messageClasses">Code dell</h2>
+
+<h2 [style.color]="'orange'">test orange</h2>
+
+<h2 [style.color]="hasError ? 'red' : 'green'">red if error else green</h2>
+
+<h2 [style.color]="highlightColor">orange text </h2>
+
+<h2 [ngStyle]="styles">multiple styles</h2>
