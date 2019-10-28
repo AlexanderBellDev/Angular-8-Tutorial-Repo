@@ -9,6 +9,7 @@ import { TemplatereferenceComponent } from './templatereference/templatereferenc
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import {FormsModule} from '@angular/forms';
 import { StructuraldirectivesComponent } from './structuraldirectives/structuraldirectives.component';
+import { ComponentinteractionComponent } from './componentinteraction/componentinteraction.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StructuraldirectivesComponent } from './structuraldirectives/structural
     EventbindingComponent,
     TemplatereferenceComponent,
     TwowaybindingComponent,
-    StructuraldirectivesComponent
+    StructuraldirectivesComponent,
+    ComponentinteractionComponent
   ],
   imports: [
     BrowserModule,

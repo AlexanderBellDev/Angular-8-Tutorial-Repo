@@ -1,20 +1,21 @@
-<h2 *ngIf="visible; else elseBlock1">Codevolution</h2>
+<h1>ng if</h1>
+<h4 *ngIf="visible; else elseBlock1">Codevolution</h4>
 
 <ng-template #elseBlock1>
-  <h2>Name is hidden</h2>
+  <h4>Name is hidden</h4>
 </ng-template>
 
 <div *ngIf="visible; then thenBlock; else elseBlock"></div>
 
 <ng-template #thenBlock>
-  <h2>Codeevolution</h2>
+  <h4>Codeevolution</h4>
 </ng-template>
 <ng-template #elseBlock>
-  <h2>hidden</h2>
+  <h4>hidden</h4>
 </ng-template>
 
 
-
+<h1>ng switch</h1>
 
 <div [ngSwitch]="color">
   <div [style.color]="'red'" *ngSwitchCase="'red'">You picked red</div>
@@ -22,3 +23,23 @@
   <div [style.color]="'green'" *ngSwitchCase="'green'">you picked green</div>
   <div [style.color]="'pink'" *ngSwitchDefault>Pick again</div>
 </div>
+
+
+<h1>
+  ng for
+</h1>
+
+<div *ngFor="let color of colors; index as i; odd as o">
+  <h4>{{i}} {{color}} {{o}}</h4>
+</div>
+
+<br>
+
+<div *ngFor="let color of colors; index as i; odd as o">
+  <h4 *ngIf="o===true; else elseBlock2">{{i}} {{color}} number is odd</h4>
+  <ng-template #elseBlock2>
+    <h4>{{i}} {{color}} number is even</h4>
+  </ng-template>
+</div>
+
+
