@@ -1,0 +1,14 @@
+<h2 *ngIf="visible; else elseBlock1">Codevolution</h2>
+
+<ng-template #elseBlock1>
+  <h2>Name is hidden</h2>
+</ng-template>
+
+<div *ngIf="visible; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h2>Codeevolution</h2>
+</ng-template>
+<ng-template #elseBlock>
+  <h2>hidden</h2>
+</ng-template>
