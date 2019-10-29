@@ -16,6 +16,8 @@ import {EmployeeService} from "./service/employee.service";
 import {HttpClientModule} from "@angular/common/http";
 import { DepartmentlistComponent } from './departmentlist/departmentlist.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { EmployeelistComponent } from './employeelist/employeelist.component';
     PipesComponent,
     ServicestutorialComponent,
     DepartmentlistComponent,
-    EmployeelistComponent
+    EmployeelistComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
