@@ -11,6 +11,9 @@ import {FormsModule} from '@angular/forms';
 import { StructuraldirectivesComponent } from './structuraldirectives/structuraldirectives.component';
 import { ComponentinteractionComponent } from './componentinteraction/componentinteraction.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ServicestutorialComponent } from './servicestutorial/servicestutorial.component';
+import {EmployeeService} from "./service/employee.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,12 +24,14 @@ import { PipesComponent } from './pipes/pipes.component';
     TwowaybindingComponent,
     StructuraldirectivesComponent,
     ComponentinteractionComponent,
-    PipesComponent
+    PipesComponent,
+    ServicestutorialComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
