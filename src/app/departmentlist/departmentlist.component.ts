@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-departmentlist',
@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./departmentlist.component.css']
 })
 export class DepartmentlistComponent implements OnInit {
+  activeId;
   departments = [
     {id: 1, name: 'Angular'},
     {id: 2, name: 'Node'},
@@ -14,12 +15,19 @@ export class DepartmentlistComponent implements OnInit {
     {id: 4, name: 'Ruby'},
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.activeId = parseInt(params.get('id'));
+    })
   }
 
   onSelect(department) {
     this.router.navigate(['/departments',department.id])
+  }
+
+  isSelected(department){
+    return department.id === this.activeId;
   }
 }
