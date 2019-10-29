@@ -19,6 +19,7 @@ import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { DepartmentoverviewComponent } from './departmentoverview/departmentoverview.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     EmployeelistComponent,
     PageNotFoundComponent,
     HomeComponent,
-    DepartmentDetailComponent
+    DepartmentDetailComponent,
+    DepartmentoverviewComponent
   ],
   imports: [
     BrowserModule,
