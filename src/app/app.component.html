@@ -1,1 +1,23 @@
-<app-servicestutorial></app-servicestutorial>
+<div class="text-center">
+  <h1>Tutorial App</h1>
+</div>
+<div class="container">
+  <div class="navbar navbar-default">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/']">Home</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/employees']">Employees</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/departments']">Departments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -14,6 +14,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ServicestutorialComponent } from './servicestutorial/servicestutorial.component';
 import {EmployeeService} from "./service/employee.service";
 import {HttpClientModule} from "@angular/common/http";
+import { DepartmentlistComponent } from './departmentlist/departmentlist.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {HttpClientModule} from "@angular/common/http";
     StructuraldirectivesComponent,
     ComponentinteractionComponent,
     PipesComponent,
-    ServicestutorialComponent
+    ServicestutorialComponent,
+    DepartmentlistComponent,
+    EmployeelistComponent
   ],
   imports: [
     BrowserModule,
