@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
+import {relativeFrom} from "@angular/compiler-cli/src/ngtsc/file_system";
 
 @Component({
   selector: 'app-departmentlist',
@@ -24,7 +25,8 @@ export class DepartmentlistComponent implements OnInit {
   }
 
   onSelect(department) {
-    this.router.navigate(['/departments',department.id])
+    // this.router.navigate(['/departments',department.id])
+    this.router.navigate([department.id], {relativeTo: this.activatedRoute})
   }
 
   isSelected(department){
