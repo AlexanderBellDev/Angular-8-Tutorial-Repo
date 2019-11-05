@@ -1,4 +1,6 @@
-# Propertybinding
+# Angular 8 Tutorial Repo
+ I have created this tutorial as a reference point for various angular components with associated notes and code on how to implement each aspect of the framework.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
